@@ -18,7 +18,6 @@ if (isset($quizzes[$topic])) {
 
     foreach ($quiz as $question) {
         $questionText = str_replace(' ', '_', $question['question']);
-
         $selectedAnswer = $answers[$questionText];
 
         if ($selectedAnswer === $question['answer']) {
